@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FloodNet Capstone</title>
+  <style>
+    /* CSS code for image grid */
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: 10px;
+    }
+    .image-grid img {
+      max-width: 60%;
+      max-height: 60%;
+      object-fit: contain;
+    }
+    
+    .image-grid .check-button {
+      width: 100%;
+      text-align: center;
+      margin-top: 5px;
+    }
+    .buttons {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      margin: 10px;
+    }    
+    .home-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to FloodNet Capstone Website</h1>
+  <div class="home-button">
+ 
+    <button onclick="location.href='{{ url_for('home') }}'">Home</button>
+  </div>
+  <div class="image-grid">
+    <div>
+      <img src="/static/image1.jpg" alt="Image 1">
+      <div class="check-button">
+        <input type="checkbox"> Select
+      </div>
+    </div>
+    <div>
+      <img src="/static/image2.jpg" alt="Image 2">
+      <div class="check-button">
+        <input type="checkbox"> Select
+      </div>
+    </div>
+    <div>
+      <img src="/static/image3.jpg" alt="Image 3">
+      <div class="check-button">
+        <input type="checkbox"> Select
+      </div>
+    </div>
+    <div>
+      <img src="/static/image4.jpg" alt="Image 4">
+      <div class="check-button">
+        <input type="checkbox"> Select
+      </div>
+    </div>
+    <div>
+      <img src="/static/image5.jpg" alt="Image 5">
+      <div class="check-button">
+        <input type="checkbox"> Select
+      </div>
+    </div>
+    <div>
+      <img src="/static/image6.jpg" alt="Image 6">
+      <div class="check-button">
+        <input type="checkbox"> Select
+      </div>
+    </div>
+    <div>
+      <img src="/static/image7.jpg" alt="Image 7">
+      <div class="check-button">
+        <input type="checkbox"> Select
+      </div>
+    </div>
+    <div>
+      <img src="/static/image8.jpg" alt="Image 8">
+      <div class="check-button">
+        <input type="checkbox"> Select
+      </div>
+    </div>
+    <div>
+      <img src="/static/image9.jpg" alt="Image 9">
+      <div class="check-button">
+        <input type="checkbox"> Select
+    </div>
+  </div>
+  <div class="buttons">
+    <button>Submit</button>
+    <button onclick="location.reload()">Refresh</button>
+  </div>
+</body>
+</html>

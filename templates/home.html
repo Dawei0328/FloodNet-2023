@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header>
+    <h1>2023 CUSP Capstone Team</h1>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('test') }}" class="active">Home</a></li>
+        <li><a href="https://github.com/floodnet-nyc/cusp-cv-capstone" >GitHub</a></li>
+        <li><a href="{{ url_for('home') }}">Data Collection</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-section">
+      <h2>Welcome to Project Team</h2>
+      <ul>
+      <p>Mentors</p>
+        <li>Feng</li>
+        <li>Charlie</li>
+      <p>Members</p>
+      </ul>
+      <ul>
+        <li>Dawei</li>
+        <li>Devang</li>
+        <li>Lantian</li>
+        <li>Yifan</li>
+      </ul>
+      <a href="https://github.com/floodnet-nyc/cusp-cv-capstone" class="cta-button">Visit Our GitHub</a>
+    </section>
+    <section class="project-section">
+      <h2>Project Introduction</h2>
+      <p>In NYC, sea level rise has led to a dramatic increase in flood risk, particularly in low-lying and coastal neighborhoods. Urban flood water can impede pedestrian and vehicle mobility, and also can contain a diverse array of contaminants, including fuels, raw sewage, and industrial/household chemicals. For this capstone project, the team will train, test and deploy computer vision (CV) and deep learning (DL) models for the detection of street flood events. Existing labelled datasets will be used for training. In addition, an unlabelled NYC street image dataset will be provided for labelling and training of a NYC centric model.
+      </p>
+      <a href="{{ url_for('test') }}" class="cta-button">Visit Data Collection Page</a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Project Team. All rights reserved.</p>
+  </footer>
+</body>
+</html>

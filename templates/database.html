@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Database</title>
+</head>
+<body>
+  <h1>Database Contents</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Image ID</th>
+        <th>Status</th>
+        <th>Count</th>
+        <th>CTR</th>
+        <th>Reach Max</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      {% for image in images %}
+      <tr>
+        <td>{{ image.imageID }}</td>
+        <td>{{ image.status }}</td>
+        <td>{{ image.count }}</td>
+        <td>{{ image.ctr }}</td>
+        <td>{{ image.reach_max }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>
